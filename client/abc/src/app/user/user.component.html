@@ -1,0 +1,21 @@
+
+
+<h2>User Information</h2>
+<form (ngSubmit)="submitForm()">
+  <label for="firstName">First Name:</label>
+  <input type="text" name="title" id="firstName" [(ngModel)]="userData.Fristname"required><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text"  name="title" id="lastName" [(ngModel)]="userData.LastName" required><br><br>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date"  name="title" id="dob" [(ngModel)]="userData.DateofBirth" required><br><br>
+
+  <label for="city">City:</label>
+  <input type="text"  name="title" id="city" [(ngModel)]="userData.city" required><br><br>
+
+  <label for="status">Active/Deactive:</label>
+  <input type="text"  name="title" id="status" [(ngModel)]="userData.active" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>

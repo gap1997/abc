@@ -1,0 +1,33 @@
+ <app-user></app-user>
+
+
+
+ <br>
+ 
+<h1>Employees</h1>
+<table class="w-300 table table.striped">
+  <thead>
+    <tr>
+      <th>FristName</th>
+      <th>Lastname</th>
+      <th>Date OF Birth</th>
+      <th>City</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let value of Batches">
+      <td>{{ value.Fristname }}</td>
+      <td>{{ value.LastName }}</td>
+      <td>{{ value.DateofBirth }}</td>
+      <td>{{ value.city }}</td>
+      <td>{{ value.active }}</td>
+      <button class="mx-2" (click)="deleteUser(value._id)">Delete User</button>
+      <button class="mx-2" (click)="updateUser(value._id)">Update</button>
+
+    </tr>
+  </tbody>
+</table>
+
+
+<router-outlet></router-outlet>
